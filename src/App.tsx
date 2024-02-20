@@ -30,6 +30,8 @@ const App = () => {
         <h1 className="App-title">Bienvenue sur le blind test fait par Bamba</h1>
       </header>
       <div className="App-images">
+        <img src={'https://fr.wikipedia.org/wiki/Ahmadou_Bamba#/media/Fichier:AhmaduBamba.jpg'} style={{width:200, height:200}}/>
+      <p>{tracks[0]?.track.name}</p>
         <p>C'est parti!</p>
       </div>
       <div className="App-buttons"></div>
