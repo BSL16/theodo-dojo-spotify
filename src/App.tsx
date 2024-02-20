@@ -5,6 +5,7 @@ import { fetchTracks } from './lib/fetchTracks';
 import { useQuery } from '@tanstack/react-query';
 
 
+
 const App = () => {
 
   const [trackIndex, setTrackIndex] = useState(0)
@@ -18,9 +19,12 @@ const App = () => {
     
 });
   console.log(tracks)
-
+  var n = tracks?.length
+  
   return (
+    
     <div className="App">
+      <p> il y a {n} nombres de musique dans ma playlist </p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-title">Bienvenue sur le blind test fait par Bamba</h1>
